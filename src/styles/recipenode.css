@@ -1,0 +1,36 @@
+.recipe-node {
+  border: 1px solid #ddd;
+  padding: 10px;
+  border-radius: 5px;
+  background: white;
+  width: 250px;
+}
+
+.recipe-content h3 {
+  margin-top: 0;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 5px;
+}
+
+.recipe-details {
+  font-size: 0.9em;
+}
+
+.recipe-io {
+  display: flex;
+  justify-content: space-between;
+}
+
+.recipe-input,
+.recipe-output {
+  width: 48%;
+}
+
+.recipe-machine {
+  margin-top: 10px;
+}
+
+.recipe-machine select {
+  width: 100%;
+  margin-top: 5px;
+}
