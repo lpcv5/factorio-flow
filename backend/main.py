@@ -91,7 +91,7 @@ class RecipeDetail(BaseModel):
 async def get_groups():
     conn = get_db_connection()
     cursor = conn.cursor()
-    cursor.execute("SELECT * FROM groups ORDER BY order_value")
+    cursor.execute("SELECT * FROM groups ORDER BY order_value LIMIT 6")
     groups = cursor.fetchall()
     conn.close()
     return [Group(**dict(group)) for group in groups]
